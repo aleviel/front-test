@@ -2,4 +2,5 @@
 @import "reset";
 @import "helpers";
 @import "layout";
-@import "modules/*.scss";
+@import "fixes";
+@import "./modules/tabs";

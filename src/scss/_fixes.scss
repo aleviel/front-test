@@ -1,0 +1,35 @@
+.main-wrapper {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    margin-top: 160px;
+    flex: 1;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+
+    @media (max-width: $mobile-max) {
+        flex-wrap: nowrap;
+    }
+}
+
+.img-block {
+    overflow: hidden;
+    height: 400px;
+    background: #ffffff url('https://i.ytimg.com/vi/6-MtgZ7ZNMc/maxresdefault.jpg') no-repeat 0 0
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    &1 {
+        cursor: move;
+    }
+}
