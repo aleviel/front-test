@@ -13,8 +13,24 @@ window.addEventListener('scroll', function () {
 
 });
 
+let photo1 = document.querySelector('.photo1');
 
+photo1.onmousedown = function (e) {
 
-function moveEl(e) {
+	let startX = e.pageX,
+		startY = e.pageY;
 
+	document.onmousemove = function (e) {
+		photo1.style.left = e.pageX - startX + 'px';
+		photo1.style.top = e.pageY - startY + 'px';
+	};
+
+	photo1.onmouseup = function () {
+		document.onmousemove = null;
+		photo1.onmouseup = null;
+	};
 }
+
+photo1.ondragstart = function () {
+	return false;
+};
