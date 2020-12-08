@@ -61,7 +61,8 @@ gulp.task('watch', function () {
 
 });
 
+//watcher + server
 gulp.task('start', gulp.parallel('watch', 'server'));
 
-//build project
-gulp.task('build', gulp.parallel('index', 'scripts', 'styles'));
+//build project + server
+gulp.task('build', gulp.parallel('index', 'scripts', 'styles', 'server'));

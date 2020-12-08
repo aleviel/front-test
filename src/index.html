@@ -41,6 +41,12 @@
             <div class="main-content">
                 <h1>Тестовое задание</h1>
                 <div class="tabs js-tabs">
+                    <select class="select" name="select">
+                        <option class="select-header" value="1" selected>Описание</option>
+                        <option class="select-header" value="2">Пустой таб</option>
+                        <option class="select-header" value="3">Фото №1</option>
+                        <option class="select-header" value="4">Фото №2</option>
+                    </select>
                     <ul class="tab-header-wrap">
                         <li class="tab-header js-tab-header">Описание</li>
                         <li class="tab-header js-tab-header">Пустой таб</li>
@@ -55,22 +61,27 @@
                                 <li>Сайдбар должен быть всегда дотянут до футера;</li>
                                 <li>При прокрутке, шапка страницы должна фиксироваться вверху окна, при этом высота
                                     шапки должна плавно уменьшиться до 70 пикселей;</li>
-                                <li>При любой ширине экрана, шапка должна адекватно отображаться (перестраиваться, если
+                                <li>При любой ширине экрана, шапка должна адекватно отображаться (перестраиваться,
+                                    если
                                     необходимо);</li>
                                 <li>
-                                    При ширине экрана менее 768 пикселей, табы должны превращаться в выпадающий список;
+                                    При ширине экрана менее 768 пикселей, табы должны превращаться в выпадающий
+                                    список;
                                     <ul>
-                                        <li>Заголовок активного таба должен отображаться в качестве выбранного пункта
+                                        <li>Заголовок активного таба должен отображаться в качестве выбранного
+                                            пункта
                                             списка;</li>
                                         <li>Желательно реализовать анимацию открытия/закрытия списка;</li>
                                     </ul>
                                 </li>
                                 <li>
-                                    Добавить таб с блоком, внутри которого должно находиться изображение (любое, на ваше
+                                    Добавить таб с блоком, внутри которого должно находиться изображение (любое, на
+                                    ваше
                                     усмотрение), превышающее этот блок по размерам;
                                     <ul>
                                         <li>У блока должен быть установлен <code>overflow: hidden</code>;</li>
-                                        <li>Нужен механизм перетаскивания изображения в пределах блока, чтобы увидеть
+                                        <li>Нужен механизм перетаскивания изображения в пределах блока, чтобы
+                                            увидеть
                                             скрытые части картинки;</li>
                                     </ul>
                                 </li>
@@ -80,7 +91,8 @@
                                     <ul>
                                         <li>У блока должен быть установлен <code>overflow: hidden</code>;</li>
                                         <li>Нужен механизм плавного перемещения изображения по наведению мышкой в
-                                            пределах блока, чтобы увидеть скрытые части картинки (Навели в правую часть
+                                            пределах блока, чтобы увидеть скрытые части картинки (Навели в правую
+                                            часть
                                             контейнера - увидели правую часть изображения).</li>
                                     </ul>
                                 </li>
@@ -91,14 +103,18 @@
                         </li>
                         <li class="tab-content js-tab-content">
                             <div class="img-block">
-                                <img class="photo photo1" src="https://i.ytimg.com/vi/6-MtgZ7ZNMc/maxresdefault.jpg"
-                                    alt="foto1">
+                                <div class="img-wrapper">
+                                    <img class="photo photo1" src="https://i.ytimg.com/vi/6-MtgZ7ZNMc/maxresdefault.jpg"
+                                        alt="photo1">
+                                </div>
                             </div>
                         </li>
                         <li class="tab-content js-tab-content">
                             <div class="img-block">
-                                <img class="photo photo2" src="https://i.ytimg.com/vi/6-MtgZ7ZNMc/maxresdefault.jpg"
-                                    alt="foto1">
+                                <div class="img-wrapper">
+                                    <img class="photo photo2" src="https://i.ytimg.com/vi/6-MtgZ7ZNMc/maxresdefault.jpg"
+                                        alt="photo2">
+                                </div>
                             </div>
                         </li>
                     </ul>

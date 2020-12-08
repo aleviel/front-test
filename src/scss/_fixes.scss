@@ -12,10 +12,15 @@
 .header {
     position: fixed;
     width: 100%;
+    z-index: 2;
 
     @media (max-width: $mobile-max) {
         flex-wrap: nowrap;
     }
+}
+
+.tab-content-wrap {
+    max-width: 50vw;
 }
 
 .img-block {
@@ -23,14 +28,33 @@
     height: 400px;
 }
 
-.photo {
-    width: 100%;
-    height: 100%;
+.img-wrapper {
+    width: 1280px;
+    height: 720px;
+}
 
+.photo {
     &1 {
         cursor: move;
         position: relative;
         left: 0;
         top: 0;
+        object-fit: cover;
+    }
+}
+
+.select {
+    display: none;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.tab-header-wrap {
+    @media (max-width: 768px) {
+        display: none !important;
     }
 }
